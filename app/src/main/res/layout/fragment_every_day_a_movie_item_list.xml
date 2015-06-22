@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_everyday_a_movie_item_height"
+    android:padding="10dp">
+
+    <ImageView android:id="@+id/fragmentEverydayAMovieItemListImageMovieId"
+        android:layout_width="@dimen/fragment_everyday_a_movie_item_list_image_movie_width"
+        android:layout_height="@dimen/fragment_everyday_a_movie_item_list_image_movie_height"
+        android:scaleType="fitXY"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieItemListDateId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/fragment_everyday_a_movie_item_list_release_date_text_size"
+        android:textColor="@color/navigation_bar_color"
+        android:text="TOMORROW"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieItemListNameId"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toRightOf="@+id/fragmentEverydayAMovieItemListImageMovieId"
+        android:textSize="@dimen/fragment_everyday_a_movie_item_list_release_name_text_size"
+        android:textColor="@color/navigation_bar_color"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:transitionName="name"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieItemListClassificationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentEverydayAMovieItemListNameId"
+        android:layout_toRightOf="@+id/fragmentEverydayAMovieItemListImageMovieId"
+        android:layout_marginStart="16dp"
+        android:textSize="@dimen/fragment_everyday_a_movie_item_list_release_date_text_size"
+        android:transitionName="classification"
+        android:textColor="@color/navigation_bar_color"
+        android:text="PG-13"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieItemListDurationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentEverydayAMovieItemListNameId"
+        android:layout_toRightOf="@+id/fragmentEverydayAMovieItemListClassificationId"
+        android:layout_marginStart="@dimen/fragment_everyday_a_movie_item_list_duration_margin_start"
+        android:textSize="@dimen/fragment_everyday_a_movie_item_list_release_date_text_size"
+        android:textColor="@color/navigation_bar_color"
+        android:text="170 MIN"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieItemListGenreId"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/fragmentEverydayAMovieItemListNameId"
+        android:layout_toRightOf="@+id/fragmentEverydayAMovieItemListDurationId"
+        android:layout_marginStart="@dimen/fragment_everyday_a_movie_item_list_duration_margin_start"
+        android:textSize="@dimen/fragment_everyday_a_movie_item_list_release_date_text_size"
+        android:textColor="@color/navigation_bar_color"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="THRILLER/ADVENTURE/ACTION/DANCE"/>
+
+</RelativeLayout>

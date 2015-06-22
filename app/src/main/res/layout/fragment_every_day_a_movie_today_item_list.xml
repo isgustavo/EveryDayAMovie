@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_everyday_a_movie_item_today_height"
+    android:background="@color/primary"
+    android:padding="10dp">
+
+    <TextView android:id="@+id/fragmentEverydayAMovieTodayItemListTodayId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fragment_everyday_a_movie_today_item_list_data_text_size"
+        android:textColor="@color/windows_background"
+        android:layout_alignParentTop="true"
+        android:text="TODAY, APRIL 22"/>
+
+
+    <ImageView android:id="@+id/fragmentEverydayAMovieTodayItemListImageMovieId"
+        android:layout_width="@dimen/fragment_everyday_a_movie_today_item_list_image_movie_width"
+        android:layout_height="@dimen/fragment_everyday_a_movie_today_item_list_image_movie_height"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieTodayItemListNameId"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fragment_everyday_a_movie_today_item_list_name_text_size"
+        android:textColor="@color/windows_background"
+        android:layout_centerVertical="true"
+        android:lines="2"
+        android:ellipsize="end"
+        android:text="JURASSIC PARK O PARQUE DOS DINOSSAUROS"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieTodayItemListClassificationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fragment_everyday_a_movie_today_item_list_text_size"
+        android:textColor="@color/windows_background"
+        android:layout_below="@+id/fragmentEverydayAMovieTodayItemListNameId"
+        android:text="PG-13"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieTodayItemListDurationId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fragment_everyday_a_movie_today_item_list_text_size"
+        android:textColor="@color/windows_background"
+        android:layout_marginStart="@dimen/fragment_everyday_a_movie_today_item_list_name_margin"
+        android:layout_below="@+id/fragmentEverydayAMovieTodayItemListNameId"
+        android:layout_toRightOf="@+id/fragmentEverydayAMovieTodayItemListClassificationId"
+        android:text="170 MIN"/>
+
+    <TextView android:id="@+id/fragmentEverydayAMovieTodayItemListGenreId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragmentEverydayAMovieTodayItemListDurationId"
+        android:textSize="@dimen/fragment_everyday_a_movie_today_item_list_text_size"
+        android:textColor="@color/windows_background"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="THRILLER/ADVENTURE/ACTION/DANCE"/>
+
+</RelativeLayout>

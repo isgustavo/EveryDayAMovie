@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="primary" type="color">#d04700</item>
+
+    <item name="primary_dark" type="color">#993300</item>
+
+    <item name="windows_background" type="color">#ececd3</item>
+
+    <item name="navigation_bar_color" type="color">#000000</item>
+
+</resources>
